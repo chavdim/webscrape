@@ -1,19 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Websraper can be used to extract particular html elements from raw html data.
-example: get all spans that contain "review-text" (<span id = "review-text">...</div> )
 
-w = Webscraper()
-w.getHtml(url)
-r = w.getElementsOfType("span",contains = "review-text" ) 
-
-"""
 
 import requests
-class HTMLElement ():
-    def __init__ (self, type=None, description=None, innerHtml =None):
-        pass
+
 class Webscraper ():
     def __init__ (self, url=None, html=None):
         self.url = url
@@ -100,10 +90,10 @@ class Webscraper ():
         #print(pairs) 
         return pairs
   
-
+"""EXAMPLE
 w = Webscraper()
 w.getHtml('https://www.amazon.co.jp/product-reviews/B006D87AOM/ref=cm_cr_arp_d_paging_btm_2?ie=UTF8&showViewpoints=1&pageNumber=1')
 r = w.getElementsOfType("span",contains = "review-text" ) 
 
-
+"""
   
